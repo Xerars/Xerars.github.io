@@ -1,38 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+
+<!-- <HTML lang = "zh-TW"> 繁體中文 -->
+<!-- <HTML lang = "zh-CN"> 簡體中文 -->
+<!-- <HTML lang = "ja">    日文 -->
+<!-- <HTML lang = "ko">    韓文 -->
+<HTML lang="en">    <!-- Language: 英文 -->
+
 <!-- 標頭 -->
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的個人網頁</title>
-    <link rel="stylesheet" href="./css/styles.css">
+<HEAD>
+    <meta charset="UTF-8">  <!-- UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- 響應式網頁 -->
 
-    <!--<script src="./js/GetCurTime.js"></script>-->
+    <!-- 標題 -->
+    <title>Xerars Blog</title>
 
+    <!-- ICON -->
+    <link rel="icon" >
 
-</head>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/nav.css">
+
+    <!-- JS -->
+
+    <!-- Resource -->
+
+</HEAD>
 
 <!-- 內文 -->
-<body>
-    <header>
-        <h1>歡迎來到我的個人網頁</h1>
-    </header>
-    <section class="profile">
-        <img src="profile.jpg" alt="我的照片" class="profile-photo">
-        <h2>你好，我是[你的名字]</h2>
-        <p>我是[你的職業或興趣]，我喜歡[你的興趣或愛好]。這是我的個人網頁，在這裡你可以了解更多關於我的信息。</p>
-    </section>
-    <section class="contact">
-        <h2>聯絡我</h2>
-        <p>電子郵件: <a href="mailto:yourname@example.com">yourname@example.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/yourname" target="_blank">你的LinkedIn鏈接</a></p>
-    </section>
+<BODY>
+  <header>
+    <!-- 上方導覽列 -->
+    <div class="nav-container">
+      <!-- ICON 日光時間 -->
+      <i class = "icon_light"></i>
 
-    <section>
-      <h3>當前時間</h3><div id="CurTime"></div>
-    </section>
-    <footer>
-        <p>&copy; 2024 [你的名字]. 保留所有權利。</p>
-    </footer>
-</body>
-</html>
+      <!-- LOGO 標題 -->
+      <div class="logo-title">
+        <img class="logo" src="Logo.png" alt="Logo">
+        <h1>XERARS</h1>
+      </div>
+      <div>
+
+      <!-- 搜尋導覽列 -->
+      <div class="search-container">
+        <input type="text" placeholder="Ctrl + K to Search">
+        <input type="submit"><i class="search-button"></i></button>
+      </div>
+
+      <!-- 導覽功能按鈕-->
+      <nav>
+        <ul>
+          <li><a href="#BLOG">BLOG</a></li>         <!-- BLOG -->
+          <li><a href="#CONTACT">CONTACT</a></li>   <!-- CONTACT -->
+        </ul>
+      <nav>
+      <!-- 導覽下拉選單 -->
+      <i class="nav-dropdown"></i>
+    </div>  <!-- nav-container -->
+  <header>
+</BODY>
+</HTML>
