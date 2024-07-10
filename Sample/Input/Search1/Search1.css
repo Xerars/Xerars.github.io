@@ -1,0 +1,72 @@
+/* Search1.css */
+
+
+* /* 通用配置 */
+{
+  margin: 0;                    /* 外邊距 */
+  padding: 0;                   /* 內邊距 */
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;  /* 字體設置 */
+}
+
+.container
+{
+  width: 100%;                  /* 寬度為父容器的100% */
+  height: 100%;                 /* 高度為父容器的100% */
+  min-height: 100vh;            /* 最小高度為適口高度的100% */
+  padding: 5%;                  /* 內邊距: 5% */
+
+  /* 背景採漸變方式設置圖像 */
+  background-image: linear-gradient(rgba(0,8,51,0.9),
+                                    rgba(0,8,51,0.9)),
+                                    url("Background.png");
+  background-position: center;  /* 背景圖像在容器居中 */
+  background-size: cover;       /* 背景圖像覆蓋容器 */
+  display: flex;                /* FlexBox布局 */
+  align-items: center;          /* 在垂直方向對齊元素 */
+}
+
+.search-bar
+{
+  width: 100%;                  /* 寬度為父容器的100% */
+  max-width: 700px;             /* 最大寬度 */
+  background: rgba(255,255,255,0.2);  /* 設置半透明的白色背景 */
+  display:flex;                 /* FlexBox布局 */
+  align-items: center;          /* 在垂直方向對齊元素 */
+  border-radius: 60px;          /* 圓角邊框半徑 */
+  padding: 10px 20px;           /* 設置內邊距*/
+
+  /* 背景濾鏡效果 模糊度/飽和度 */
+  backdrop-filter: blur(4px) saturate(180%);
+}
+
+/* 輸入框文本樣式 */
+.search-bar input
+{
+  background: transparent;      /* 背景: 透明 */
+  flex:1;                       /* 輸入框在父項目占用更多空間 */
+  border:0;                     /* 邊框: 無 */
+  outline:none;                 /* 點擊不顯示外邊寬 */
+  padding: 24px 20px;           /* 上下邊距: 24  左右邊距:20 */
+  font-size: 20px;              /* 文本字體大小 */
+  color: #CAC7FF;             /* 文本顏色 */
+}
+
+/* 輸入框文本樣式(未填寫資訊) */
+.search-bar input::placeholder
+{  color: #CAC7FF;  }
+
+/* 按鈕影像長度 */
+.search-bar button img
+{  width: 25px; }
+
+/* 按鈕 */
+.search-bar button
+{
+  border: 0;                    /* 邊框: 移除 */
+  border-radius: 50%;           /* 邊框半徑: 50% */
+  width:60px;                   /* 按鈕寬度 */
+  height:60px;                  /* 按鈕高度 */
+  background: #58629B;        /* 按鈕背景顏色 */
+  cursor: pointer;              /* 滑鼠懸停光標: 指針 */
+}
